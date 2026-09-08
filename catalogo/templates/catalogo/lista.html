@@ -1,35 +1,59 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Catálogo de Productos</title>
-</head>
-<body>
-    <h1>Catálogo de Productos</h1>
-    
-    <div>
-        <p><strong>Total productos:</strong> {{ resumen.total }}</p>
-        <p><strong>Con stock:</strong> {{ resumen.con_stock }}</p>
-        <p><strong>Sin stock:</strong> {{ resumen.sin_stock }}</p>
+{% extends 'catalogo/base.html' %}
+
+{% block title %}Catálogo de Productos - Ferretería{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Catálogo de Productos</h1>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Productos</h5>
+                <p class="card-text fs-3">{{ resumen.total }}</p>
+            </div>
+        </div>
     </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Con Stock</h5>
+                <p class="card-text fs-3">{{ resumen.con_stock }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Sin Stock</h5>
+                <p class="card-text fs-3">{{ resumen.sin_stock }}</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <hr>
-
-    <ul>
+<div class="row">
     {% for producto in productos %}
-        <li>
-            <a href="{% url 'detalle_producto' producto.id %}">
-                <strong>{{ producto.nombre }}</strong>
-            </a> - ${{ producto.precio }}
-            {% if producto.stock > 0 %}
-                (Stock: {{ producto.stock }})
-            {% else %}
-                <span style="color: red;">(Sin Stock)</span>
-            {% endif %}
-        </li>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{ producto.nombre }}</h5>
+                <p class="card-text text-muted">${{ producto.precio }}</p>
+                {% if producto.stock > 0 %}
+                    <span class="badge bg-success mb-2">Stock: {{ producto.stock }}</span>
+                {% else %}
+                    <span class="badge bg-danger mb-2">Sin Stock</span>
+                {% endif %}
+            </div>
+            <div class="card-footer bg-white border-top-0">
+                <a href="{% url 'detalle_producto' producto.id %}" class="btn btn-outline-primary w-100">Ver Detalle</a>
+            </div>
+        </div>
+    </div>
     {% empty %}
-        <li>No hay productos registrados.</li>
+    <div class="col-12">
+        <div class="alert alert-warning">No hay productos registrados en el catálogo.</div>
+    </div>
     {% endfor %}
-    </ul>
-</body>
-</html>
+</div>
+{% endblock %}

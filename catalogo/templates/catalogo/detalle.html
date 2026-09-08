@@ -1,0 +1,27 @@
+{% extends 'catalogo/base.html' %}
+
+{% block title %}{{ producto.nombre }} - Detalle{% endblock %}
+
+{% block content %}
+<div class="card shadow">
+    <div class="card-header bg-dark text-white">
+        <h2 class="m-0">{{ producto.nombre }}</h2>
+    </div>
+    <div class="card-body">
+        <p class="fs-4 text-primary"><strong>Precio:</strong> ${{ producto.precio }}</p>
+        <p><strong>Estado de Stock:</strong> 
+            {% if producto.stock > 0 %}
+                <span class="badge bg-success fs-6">{{ producto.stock }} unidades disponibles</span>
+            {% else %}
+                <span class="badge bg-danger fs-6">Agotado</span>
+            {% endif %}
+        </p>
+        <hr>
+        <h5>Descripción del Producto</h5>
+        <p class="lead">{{ producto.descripcion }}</p>
+    </div>
+    <div class="card-footer">
+        <a href="{% url 'lista_productos' %}" class="btn btn-secondary">&laquo; Volver al catálogo</a>
+    </div>
+</div>
+{% endblock %}
