@@ -1,0 +1,49 @@
+{% extends 'catalogo/base.html' %}
+
+{% block title %}Agregar Producto{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h4 class="m-0">Nuevo Producto (Guardado en JSON)</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label">Nombre del Producto</label>
+                        <input type="text" name="nombre" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Categoría de Ferretería</label>
+                        <select name="categoria" class="form-select" required>
+                            <option value="Herramientas Manuales">Herramientas Manuales</option>
+                            <option value="Herramientas Eléctricas">Herramientas Eléctricas</option>
+                            <option value="Fijaciones y Tornillos">Fijaciones y Tornillos</option>
+                            <option value="Pinturas y Acabados">Pinturas y Acabados</option>
+                            <option value="Gasfitería">Gasfitería</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Precio ($)</label>
+                            <input type="number" name="precio" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Stock</label>
+                            <input type="number" name="stock" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Descripción</label>
+                        <textarea name="descripcion" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Guardar en JSON</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

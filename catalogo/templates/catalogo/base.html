@@ -21,17 +21,32 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <!-- AQUÍ SE IMPLEMENTA TU BLOQUE DE CÓDIGO -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'lista_productos' %}"><i class="bi bi-house-door me-1"></i>Inicio</a>
+                            <a class="nav-link" href="{% url 'lista_productos' %}">Inicio</a>
                         </li>
+                        {% if request.session.es_admin %}
+                            <li class="nav-item">
+                                <a class="nav-link text-warning" href="{% url 'agregar_producto' %}">+ Agregar Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" href="{% url 'logout_admin' %}">Cerrar Sesión</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'login_admin' %}">Ingreso Admin</a>
+                            </li>
+                        {% endif %}
                     </ul>
+
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Banner Principal Libre -->
+    <!-- Banner Principal -->
     <section class="bg-primary text-white py-4 mb-4 shadow-sm">
         <div class="container text-center">
             <h2 class="fw-bold m-0">Sistema de Gestión de Inventario</h2>

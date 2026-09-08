@@ -3,25 +3,68 @@
 {% block title %}{{ producto.nombre }} - Detalle{% endblock %}
 
 {% block content %}
-<div class="card shadow">
-    <div class="card-header bg-dark text-white">
-        <h2 class="m-0">{{ producto.nombre }}</h2>
-    </div>
-    <div class="card-body">
-        <p class="fs-4 text-primary"><strong>Precio:</strong> ${{ producto.precio }}</p>
-        <p><strong>Estado de Stock:</strong> 
-            {% if producto.stock > 0 %}
-                <span class="badge bg-success fs-6">{{ producto.stock }} unidades disponibles</span>
-            {% else %}
-                <span class="badge bg-danger fs-6">Agotado</span>
-            {% endif %}
-        </p>
-        <hr>
-        <h5>Descripción del Producto</h5>
-        <p class="lead">{{ producto.descripcion }}</p>
-    </div>
-    <div class="card-footer">
-        <a href="{% url 'lista_productos' %}" class="btn btn-secondary">&laquo; Volver al catálogo</a>
+<div class="container my-4">
+    <a href="{% url 'lista_productos' %}" class="btn btn-outline-secondary mb-4">
+        <i class="bi bi-arrow-left me-1"></i>Volver al catálogo
+    </a>
+
+    <div class="card shadow border-0">
+        <div class="row g-0">
+            <div class="col-md-5 d-flex align-items-center justify-content-center p-4 bg-white border-end">
+                {% if producto.imagen %}
+                    <img src="{{ producto.imagen }}" class="img-fluid rounded-start" alt="{{ producto.nombre }}" style="max-height: 350px; object-fit: contain;">
+                {% else %}
+                    <div class="text-center text-muted">
+                        <i class="bi bi-image display-1"></i>
+                        <p class="mt-2">Sin imagen disponible</p>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-md-7">
+                <div class="card-body p-4 d-flex flex-column h-100">
+                    <h2 class="card-title fw-bold text-dark mb-3">{{ producto.nombre }}</h2>
+                    <p class="card-text text-muted fs-5 mb-4">{{ producto.descripcion }}</p>
+                    
+                    <div class="mb-4">
+                        <span class="text-muted small d-block">Precio unitario:</span>
+                        <span class="display-6 fw-bold text-primary">${{ producto.precio }}</span>
+                    </div>
+
+                    <!-- CAMBIO: Control de disponibilidad y Formulario POST de Compra -->
+                    <div class="my-3">
+                        {% if producto.stock > 0 %}
+                            <p class="text-success fw-bold fs-5 mb-3">
+                                <i class="bi bi-check-circle-fill me-2"></i>Disponible ({{ producto.stock }} unidades en stock)
+                            </p>
+                            <form action="{% url 'agregar_al_carrito' producto.id %}" method="POST">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-success btn-lg w-100">
+                                    <i class="bi bi-bag-check me-2"></i>Comprar Producto
+                                </button>
+                            </form>
+                        {% else %}
+                            <p class="text-danger fw-bold fs-5 mb-3">
+                                <i class="bi bi-exclamation-octagon-fill me-2"></i>Sin Stock Disponible
+                            </p>
+                            <button class="btn btn-secondary btn-lg w-100" disabled>
+                                <i class="bi bi-x-circle me-2"></i>No disponible para compra
+                            </button>
+                        {% endif %}
+                    </div>
+
+                    {% if request.session.es_admin %}
+                        <div class="mt-auto pt-4 border-top d-flex gap-2">
+                            <a href="{% url 'editar_producto' producto.id %}" class="btn btn-warning flex-fill text-dark fw-bold">
+                                <i class="bi bi-pencil-square me-1"></i>Editar Producto
+                            </a>
+                            <a href="{% url 'eliminar_producto' producto.id %}" class="btn btn-danger flex-fill fw-bold">
+                                <i class="bi bi-trash me-1"></i>Eliminar Producto
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

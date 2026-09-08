@@ -1,23 +1,322 @@
 [
     {
         "id": 1,
-        "nombre": "Teclado Mecánico RGB",
-        "precio": 45000,
-        "stock": 10,
-        "descripcion": "Teclado mecánico con switches rojos y retroiluminación RGB."
+        "nombre": "Martillo de Peña 16oz",
+        "descripcion": "Martillo con mango de fibra de vidrio resistente a impactos.",
+        "precio": 12990.0,
+        "stock": 30,
+        "imagen": ""
     },
     {
         "id": 2,
-        "nombre": "Mouse Gamer 16000 DPI",
-        "precio": 25000,
+        "nombre": "Martillo de Uña 20oz",
+        "descripcion": "Martillo de acero forjado con mango antideslizante.",
+        "precio": 14990.0,
         "stock": 0,
-        "descripcion": "Mouse óptico ergonómico con botones programables."
+        "imagen": ""
     },
     {
         "id": 3,
-        "nombre": "Monitor 24 pulgadas 144Hz",
-        "precio": 150000,
+        "nombre": "Juego de Destornilladores 6 pzs",
+        "descripcion": "Destornilladores con punta magnética plana y Philips.",
+        "precio": 8990.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 4,
+        "nombre": "Juego de Destornilladores de Precisión 12 pzs",
+        "descripcion": "Set para electrónica con puntas intercambiables.",
+        "precio": 6490.0,
+        "stock": 8,
+        "imagen": ""
+    },
+    {
+        "id": 5,
+        "nombre": "Taladro Inalámbrico 18V",
+        "descripcion": "Taladro percutor con 2 baterías de litio y cargador rápido.",
+        "precio": 49990.0,
         "stock": 5,
-        "descripcion": "Monitor IPS Full HD ideal para gaming y trabajo."
+        "imagen": ""
+    },
+    {
+        "id": 6,
+        "nombre": "Taladro de Impacto 750W",
+        "descripcion": "Taladro con cable, mandril de 13mm y velocidad variable.",
+        "precio": 34990.0,
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 7,
+        "nombre": "Amoladora Angular 4.5 pulgadas",
+        "descripcion": "Amoladora de 850W ideal para corte y desbaste.",
+        "precio": 27990.0,
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 8,
+        "nombre": "Sierra Circular 7 1/4 pulgadas",
+        "descripcion": "Sierra con guía láser y disco de carburo incluido.",
+        "precio": 45990.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 9,
+        "nombre": "Cinta Métrica 5 metros",
+        "descripcion": "Cinta métrica con freno automático y carcasa de alto impacto.",
+        "precio": 3990.0,
+        "stock": 30,
+        "imagen": ""
+    },
+    {
+        "id": 10,
+        "nombre": "Cinta Métrica 8 metros",
+        "descripcion": "Cinta métrica reforzada con gancho magnético.",
+        "precio": 5990.0,
+        "stock": 20,
+        "imagen": ""
+    },
+    {
+        "id": 11,
+        "nombre": "Nivel de Burbuja 60cm",
+        "descripcion": "Nivel de aluminio con 3 viales de precisión.",
+        "precio": 7990.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 12,
+        "nombre": "Nivel Láser Autonivelante",
+        "descripcion": "Proyecta líneas horizontales y verticales de forma automática.",
+        "precio": 39990.0,
+        "stock": 25,
+        "imagen": ""
+    },
+    {
+        "id": 13,
+        "nombre": "Set de Llaves Allen 9 pzs",
+        "descripcion": "Llaves hexagonales en pulgadas, acero al cromo vanadio.",
+        "precio": 4990.0,
+        "stock": 12,
+        "imagen": ""
+    },
+    {
+        "id": 14,
+        "nombre": "Set de Llaves Combinadas 12 pzs",
+        "descripcion": "Llaves boca-corona de 8mm a 19mm.",
+        "precio": 15990.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 15,
+        "nombre": "Alicate Universal 8 pulgadas",
+        "descripcion": "Alicate de acero al carbono con mangos ergonómicos.",
+        "precio": 5490.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 16,
+        "nombre": "Alicate de Corte Diagonal",
+        "descripcion": "Ideal para cortar cables y alambres delgados.",
+        "precio": 4290.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 17,
+        "nombre": "Caja de Herramientas 16 pulgadas",
+        "descripcion": "Caja plástica con bandeja removible y cierre reforzado.",
+        "precio": 11990.0,
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 18,
+        "nombre": "Caja de Herramientas Metálica",
+        "descripcion": "Estructura de acero con dos compartimentos internos.",
+        "precio": 18990.0,
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 19,
+        "nombre": "Escalera de Aluminio 6 Peldaños",
+        "descripcion": "Escalera plegable liviana con soporte de hasta 120kg.",
+        "precio": 42990.0,
+        "stock": 20,
+        "imagen": ""
+    },
+    {
+        "id": 20,
+        "nombre": "Escalera Tijera 4 Peldaños",
+        "descripcion": "Compacta y resistente, ideal para uso doméstico.",
+        "precio": 28990.0,
+        "stock": 25,
+        "imagen": ""
+    },
+    {
+        "id": 21,
+        "nombre": "Pintura Látex Blanco 1 Galón",
+        "descripcion": "Pintura lavable de interior, alto poder cubriente.",
+        "precio": 15990.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 22,
+        "nombre": "Pintura Esmalte Sintético Negro 1/4 Galón",
+        "descripcion": "Esmalte brillante para metal y madera.",
+        "precio": 6990.0,
+        "stock": 20,
+        "imagen": ""
+    },
+    {
+        "id": 23,
+        "nombre": "Rodillo para Pintura 9 pulgadas",
+        "descripcion": "Rodillo de espuma con mango antideslizante.",
+        "precio": 2990.0,
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 24,
+        "nombre": "Brocha de Cerdas Naturales 3 pulgadas",
+        "descripcion": "Brocha ideal para barnices y esmaltes.",
+        "precio": 1990.0,
+        "stock": 30,
+        "imagen": ""
+    },
+    {
+        "id": 25,
+        "nombre": "Cinta de Embalaje Transparente",
+        "descripcion": "Rollo de 48mm x 40m, alta adherencia.",
+        "precio": 1490.0,
+        "stock": 20,
+        "imagen": ""
+    },
+    {
+        "id": 26,
+        "nombre": "Cinta Aisladora Eléctrica",
+        "descripcion": "Cinta de PVC resistente a la humedad.",
+        "precio": 990.0,
+        "stock": 12,
+        "imagen": ""
+    },
+    {
+        "id": 27,
+        "nombre": "Candado de Seguridad 50mm",
+        "descripcion": "Candado de acero endurecido con llave de seguridad.",
+        "precio": 6990.0,
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 28,
+        "nombre": "Candado con Combinación 4 Dígitos",
+        "descripcion": "Ideal para casilleros y bicicletas.",
+        "precio": 5490.0,
+        "stock": 15,
+        "imagen": ""
+    },
+    {
+        "id": 29,
+        "nombre": "Guantes de Trabajo de Cuero",
+        "descripcion": "Guantes reforzados para protección en obras.",
+        "precio": 4990.0,
+        "stock": 25,
+        "imagen": ""
+    },
+    {
+        "id": 30,
+        "nombre": "Lentes de Seguridad Transparentes",
+        "descripcion": "Protección ocular con filtro anti-rayas.",
+        "precio": 2490.0,
+        "stock": 8,
+        "imagen": ""
+    },
+    {
+        "id": 31,
+        "nombre": "Mascarilla para Polvo N95 (5 uds)",
+        "descripcion": "Protección respiratoria para trabajos de corte y lijado.",
+        "precio": 3990.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 32,
+        "nombre": "Casco de Seguridad Blanco",
+        "descripcion": "Casco tipo jockey con ajuste giratorio.",
+        "precio": 8990.0,
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 33,
+        "nombre": "Set de Brocas para Concreto 5 pzs",
+        "descripcion": "Brocas de widia para perforar hormigón y ladrillo.",
+        "precio": 7490.0,
+        "stock": 12,
+        "imagen": ""
+    },
+    {
+        "id": 34,
+        "nombre": "Set de Brocas para Metal 10 pzs",
+        "descripcion": "Brocas HSS de alta velocidad, de 1mm a 10mm.",
+        "precio": 9990.0,
+        "stock": 10,
+        "imagen": ""
+    },
+    {
+        "id": 35,
+        "nombre": "Disco de Corte para Metal 4.5 pulgadas",
+        "descripcion": "Disco abrasivo para amoladora, uso intensivo.",
+        "precio": 1990.0,
+        "stock": 8,
+        "imagen": ""
+    },
+    {
+        "id": 36,
+        "nombre": "Disco de Desbaste para Amoladora",
+        "descripcion": "Ideal para eliminar rebabas y soldaduras.",
+        "precio": 2290.0,
+        "stock": 3,
+        "imagen": ""
+    },
+    {
+        "id": 37,
+        "nombre": "Sierra Manual para Madera 20 pulgadas",
+        "descripcion": "Sierra de dientes templados para corte rápido.",
+        "precio": 6990.0,
+        "stock": 5,
+        "imagen": ""
+    },
+    {
+        "id": 38,
+        "nombre": "Serrucho de Costilla",
+        "descripcion": "Ideal para cortes de precisión en madera.",
+        "precio": 8490.0,
+        "stock": 10,
+        "imagen": ""
+    },
+    {
+        "id": 39,
+        "nombre": "Llave Inglesa Ajustable 10 pulgadas",
+        "descripcion": "Llave de acero cromado con apertura regulable.",
+        "precio": 7990.0,
+        "stock": 0,
+        "imagen": ""
+    },
+    {
+        "id": 40,
+        "nombre": "Llave Stillson 14 pulgadas",
+        "descripcion": "Llave para tuberías con mordazas dentadas.",
+        "precio": 12990.0,
+        "stock": 0,
+        "imagen": ""
     }
 ]
