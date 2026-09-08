@@ -13,7 +13,7 @@ def cargar_json(nombre_archivo):
             return json.load(file)
     return []
 
-# CAMBIO: Definición explícita de guardar_json
+# Definición explícita de guardar_json
 def guardar_json(nombre_archivo, datos):
     ruta = os.path.join(settings.BASE_DIR, 'catalogo', 'data', nombre_archivo)
     with open(ruta, 'w', encoding='utf-8') as file:
@@ -119,7 +119,7 @@ def logout_admin(request):
     return redirect('lista_productos')
 
 
-# CAMBIO: Vista para descontar stock al presionar comprar
+# Vista para descontar stock al presionar comprar
 def agregar_al_carrito(request, producto_id):
     if request.method == 'POST':
         productos = cargar_json('productos.json')
