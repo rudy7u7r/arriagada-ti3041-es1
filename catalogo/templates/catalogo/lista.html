@@ -1,58 +1,73 @@
 {% extends 'catalogo/base.html' %}
 
-{% block title %}Catálogo de Productos - Ferretería{% endblock %}
+{% block title %}Catálogo de Productos - Ferretería Central{% endblock %}
 
 {% block content %}
-<h1 class="mb-4">Catálogo de Productos</h1>
-
+<!-- Tarjetas con el Resumen Calculado en la Vista -->
 <div class="row mb-4">
     <div class="col-md-4">
-        <div class="card text-white bg-primary mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Total Productos</h5>
-                <p class="card-text fs-3">{{ resumen.total }}</p>
+        <div class="card text-white bg-dark shadow-sm">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title text-uppercase text-muted fw-bold mb-1">Total Registros</h6>
+                <p class="card-text fs-2 fw-bold m-0">{{ resumen.total }}</p>
             </div>
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card text-white bg-success mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Con Stock</h5>
-                <p class="card-text fs-3">{{ resumen.con_stock }}</p>
+        <div class="card text-white bg-success shadow-sm">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title text-uppercase fw-bold mb-1"><i class="bi bi-check-circle me-1"></i>Con Stock</h6>
+                <p class="card-text fs-2 fw-bold m-0">{{ resumen.con_stock }}</p>
             </div>
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card text-white bg-danger mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Sin Stock</h5>
-                <p class="card-text fs-3">{{ resumen.sin_stock }}</p>
+        <div class="card text-white bg-danger shadow-sm">
+            <div class="card-body text-center py-3">
+                <h6 class="card-title text-uppercase fw-bold mb-1"><i class="bi bi-x-circle me-1"></i>Sin Stock</h6>
+                <p class="card-text fs-2 fw-bold m-0">{{ resumen.sin_stock }}</p>
             </div>
         </div>
     </div>
 </div>
 
+<h3 class="mb-3 text-secondary border-bottom pb-2">Listado de Productos</h3>
+
 <div class="row">
     {% for producto in productos %}
     <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
+        <!-- Destacado visual condicional: Borde rojo y ligera opacidad si no hay stock -->
+        <div class="card h-100 shadow-sm {% if producto.stock == 0 %}border-danger bg-light-subtle opacity-75{% endif %}">
             <div class="card-body">
-                <h5 class="card-title">{{ producto.nombre }}</h5>
-                <p class="card-text text-muted">${{ producto.precio }}</p>
-                {% if producto.stock > 0 %}
-                    <span class="badge bg-success mb-2">Stock: {{ producto.stock }}</span>
-                {% else %}
-                    <span class="badge bg-danger mb-2">Sin Stock</span>
-                {% endif %}
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title fw-bold m-0">{{ producto.nombre }}</h5>
+                    {% if producto.stock == 0 %}
+                        <span class="badge bg-danger"><i class="bi bi-exclamation-octagon me-1"></i>Agotado</span>
+                    {% else %}
+                        <span class="badge bg-success"><i class="bi bg-check-lg me-1"></i>Disponible</span>
+                    {% endif %}
+                </div>
+                
+                <p class="card-text text-primary fs-5 fw-semibold mb-2">${{ producto.precio }}</p>
+                
+                <p class="card-text">
+                    {% if producto.stock > 0 %}
+                        <small class="text-muted"><i class="bi bi-box-seam me-1"></i>Stock: {{ producto.stock }} unidades</small>
+                    {% else %}
+                        <small class="text-danger fw-bold"><i class="bi bi-x-circle me-1"></i>Sin stock disponible</small>
+                    {% endif %}
+                </p>
             </div>
-            <div class="card-footer bg-white border-top-0">
-                <a href="{% url 'detalle_producto' producto.id %}" class="btn btn-outline-primary w-100">Ver Detalle</a>
+            <div class="card-footer bg-white border-top-0 pt-0">
+                <a href="{% url 'detalle_producto' producto.id %}" class="btn {% if producto.stock == 0 %}btn-outline-danger{% else %}btn-outline-primary{% endif %} w-100">
+                    Ver Detalle
+                </a>
             </div>
         </div>
     </div>
     {% empty %}
     <div class="col-12">
-        <div class="alert alert-warning">No hay productos registrados en el catálogo.</div>
+        <div class="alert alert-warning text-center">No se encontraron productos registrados en el catálogo.</div>
     </div>
     {% endfor %}
 </div>
