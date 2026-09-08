@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Productos</title>
+</head>
+<body>
+    <h1>Catálogo de Productos</h1>
+    
+    <div>
+        <p><strong>Total productos:</strong> {{ resumen.total }}</p>
+        <p><strong>Con stock:</strong> {{ resumen.con_stock }}</p>
+        <p><strong>Sin stock:</strong> {{ resumen.sin_stock }}</p>
+    </div>
+
+    <hr>
+
+    <ul>
+    {% for producto in productos %}
+        <li>
+            <a href="{% url 'detalle_producto' producto.id %}">
+                <strong>{{ producto.nombre }}</strong>
+            </a> - ${{ producto.precio }}
+            {% if producto.stock > 0 %}
+                (Stock: {{ producto.stock }})
+            {% else %}
+                <span style="color: red;">(Sin Stock)</span>
+            {% endif %}
+        </li>
+    {% empty %}
+        <li>No hay productos registrados.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

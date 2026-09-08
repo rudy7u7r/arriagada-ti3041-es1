@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "Teclado Mecánico RGB",
+        "precio": 45000,
+        "stock": 10,
+        "descripcion": "Teclado mecánico con switches rojos y retroiluminación RGB."
+    },
+    {
+        "id": 2,
+        "nombre": "Mouse Gamer 16000 DPI",
+        "precio": 25000,
+        "stock": 0,
+        "descripcion": "Mouse óptico ergonómico con botones programables."
+    },
+    {
+        "id": 3,
+        "nombre": "Monitor 24 pulgadas 144Hz",
+        "precio": 150000,
+        "stock": 5,
+        "descripcion": "Monitor IPS Full HD ideal para gaming y trabajo."
+    }
+]
