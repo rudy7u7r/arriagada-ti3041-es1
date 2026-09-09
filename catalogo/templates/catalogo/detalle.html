@@ -31,26 +31,46 @@
                     </div>
 
                     <!-- CAMBIO: Control de disponibilidad y Formulario POST de Compra -->
-                    <div class="my-3">
-                        {% if producto.stock > 0 %}
-                            <p class="text-success fw-bold fs-5 mb-3">
-                                <i class="bi bi-check-circle-fill me-2"></i>Disponible ({{ producto.stock }} unidades en stock)
-                            </p>
-                            <form action="{% url 'agregar_al_carrito' producto.id %}" method="POST">
-                                {% csrf_token %}
-                                <button type="submit" class="btn btn-success btn-lg w-100">
-                                    <i class="bi bi-bag-check me-2"></i>Comprar Producto
+                    {% if request.session.es_admin %}
+                        <div class="my-3">
+                            {% if producto.stock > 0 %}
+                                <p class="text-success fw-bold fs-5 mb-0">
+                                    <i class="bi bi-check-circle-fill me-2"></i>Disponible ({{ producto.stock }} unidades en stock)
+                                </p>
+                            {% else %}
+                                <p class="text-danger fw-bold fs-5 mb-0">
+                                    <i class="bi bi-exclamation-octagon-fill me-2"></i>Sin Stock Disponible
+                                </p>
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        <div class="my-3">
+                            {% if producto.stock > 0 %}
+                                <p class="text-success fw-bold fs-5 mb-3">
+                                    <i class="bi bi-check-circle-fill me-2"></i>Disponible ({{ producto.stock }} unidades en stock)
+                                </p>
+                                {% if request.session.usuario %}
+                                    <form action="{% url 'agregar_al_carrito' producto.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-success btn-lg w-100">
+                                            <i class="bi bi-bag-check me-2"></i>Comprar Producto
+                                        </button>
+                                    </form>
+                                {% else %}
+                                    <a href="{% url 'login_admin' %}" class="btn btn-outline-success btn-lg w-100">
+                                        <i class="bi bi-box-arrow-in-right me-2"></i>Inicia sesión para comprar
+                                    </a>
+                                {% endif %}
+                            {% else %}
+                                <p class="text-danger fw-bold fs-5 mb-3">
+                                    <i class="bi bi-exclamation-octagon-fill me-2"></i>Sin Stock Disponible
+                                </p>
+                                <button class="btn btn-secondary btn-lg w-100" disabled>
+                                    <i class="bi bi-x-circle me-2"></i>No disponible para compra
                                 </button>
-                            </form>
-                        {% else %}
-                            <p class="text-danger fw-bold fs-5 mb-3">
-                                <i class="bi bi-exclamation-octagon-fill me-2"></i>Sin Stock Disponible
-                            </p>
-                            <button class="btn btn-secondary btn-lg w-100" disabled>
-                                <i class="bi bi-x-circle me-2"></i>No disponible para compra
-                            </button>
-                        {% endif %}
-                    </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
 
                     {% if request.session.es_admin %}
                         <div class="mt-auto pt-4 border-top d-flex gap-2">

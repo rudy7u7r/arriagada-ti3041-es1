@@ -2,42 +2,42 @@
     {
         "id": 1,
         "nombre": "Martillo de Peña 16oz",
+        "precio": 12990,
+        "stock": 12,
         "descripcion": "Martillo con mango de fibra de vidrio resistente a impactos.",
-        "precio": 12990.0,
-        "stock": 30,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_792184-MLA111938332651_052026-B.jpg"
     },
     {
         "id": 2,
-        "nombre": "Martillo de Uña 20oz",
-        "descripcion": "Martillo de acero forjado con mango antideslizante.",
-        "precio": 14990.0,
-        "stock": 0,
-        "imagen": ""
+        "nombre": "Juego de Destornilladores 6 pzs",
+        "precio": 8990,
+        "stock": 4,
+        "descripcion": "Destornilladores con punta magnética plana y Philips.",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_920935-MLA114128658509_072026-B.jpg"
     },
     {
         "id": 3,
-        "nombre": "Juego de Destornilladores 6 pzs",
-        "descripcion": "Destornilladores con punta magnética plana y Philips.",
-        "precio": 8990.0,
+        "nombre": "Taladro Inalámbrico 18V",
+        "precio": 49990,
         "stock": 0,
-        "imagen": ""
+        "descripcion": "Taladro percutor con 2 baterías de litio y cargador rápido.",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_998066-MLA114229207625_072026-B.jpg"
     },
     {
         "id": 4,
-        "nombre": "Juego de Destornilladores de Precisión 12 pzs",
-        "descripcion": "Set para electrónica con puntas intercambiables.",
-        "precio": 6490.0,
-        "stock": 8,
-        "imagen": ""
+        "nombre": "Cinta Métrica 5 metros",
+        "precio": 3990,
+        "stock": 25,
+        "descripcion": "Cinta métrica con freno automático y carcasa de alto impacto.",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_613991-MLC54084841908_032023-F.jpg"
     },
     {
         "id": 5,
-        "nombre": "Taladro Inalámbrico 18V",
-        "descripcion": "Taladro percutor con 2 baterías de litio y cargador rápido.",
-        "precio": 49990.0,
-        "stock": 5,
-        "imagen": ""
+        "nombre": "Martillo osi",
+        "descripcion": "1111",
+        "precio": 10000.0,
+        "stock": 12,
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_792184-MLA111938332651_052026-B.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "descripcion": "Taladro con cable, mandril de 13mm y velocidad variable.",
         "precio": 34990.0,
         "stock": 5,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_982552-MLA112320301553_052026-B.jpg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "descripcion": "Amoladora de 850W ideal para corte y desbaste.",
         "precio": 27990.0,
         "stock": 3,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_808573-MLA112860516953_062026-B.jpg"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "descripcion": "Sierra con guía láser y disco de carburo incluido.",
         "precio": 45990.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_867806-MLA113200574434_072026-B.jpg"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "descripcion": "Cinta métrica con freno automático y carcasa de alto impacto.",
         "precio": 3990.0,
         "stock": 30,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_613991-MLC54084841908_032023-F.jpg"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "descripcion": "Cinta métrica reforzada con gancho magnético.",
         "precio": 5990.0,
         "stock": 20,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_914072-MLA114129391121_072026-B.jpg"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "descripcion": "Nivel de aluminio con 3 viales de precisión.",
         "precio": 7990.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_858406-MLA82941641323_032025-F.jpg"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "descripcion": "Proyecta líneas horizontales y verticales de forma automática.",
         "precio": 39990.0,
         "stock": 25,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_904052-MLA92166426446_092025-AB.webp"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "descripcion": "Llaves hexagonales en pulgadas, acero al cromo vanadio.",
         "precio": 4990.0,
         "stock": 12,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_798714-MLA101195253341_122025-B.jpg"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "descripcion": "Llaves boca-corona de 8mm a 19mm.",
         "precio": 15990.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_629100-MPE101613832418_122025-AB.webp"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "descripcion": "Alicate de acero al carbono con mangos ergonómicos.",
         "precio": 5490.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_783581-MLA84651122185_052025-O.jpg"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "descripcion": "Ideal para cortar cables y alambres delgados.",
         "precio": 4290.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_600382-CBT113066974021_062026-AB.webp"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "descripcion": "Caja plástica con bandeja removible y cierre reforzado.",
         "precio": 11990.0,
         "stock": 5,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_760469-MLA101194074971_122025-B.jpg"
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "descripcion": "Estructura de acero con dos compartimentos internos.",
         "precio": 18990.0,
         "stock": 5,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_690793-MLA109284724100_042026-B.jpg"
     },
     {
         "id": 19,
@@ -149,7 +149,7 @@
         "descripcion": "Escalera plegable liviana con soporte de hasta 120kg.",
         "precio": 42990.0,
         "stock": 20,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_719750-MLA113818637175_062026-B.jpg"
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "descripcion": "Compacta y resistente, ideal para uso doméstico.",
         "precio": 28990.0,
         "stock": 25,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_813077-MLA110979290384_052026-B.webp"
     },
     {
         "id": 21,
@@ -165,7 +165,7 @@
         "descripcion": "Pintura lavable de interior, alto poder cubriente.",
         "precio": 15990.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_613101-MLA99993111361_112025-AB.webp"
     },
     {
         "id": 22,
@@ -173,7 +173,7 @@
         "descripcion": "Esmalte brillante para metal y madera.",
         "precio": 6990.0,
         "stock": 20,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_782470-MLA110703667243_042026-AB.webp"
     },
     {
         "id": 23,
@@ -181,7 +181,7 @@
         "descripcion": "Rodillo de espuma con mango antideslizante.",
         "precio": 2990.0,
         "stock": 5,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_698660-MLA99577967512_122025-AB.webp"
     },
     {
         "id": 24,
@@ -189,7 +189,7 @@
         "descripcion": "Brocha ideal para barnices y esmaltes.",
         "precio": 1990.0,
         "stock": 30,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_876396-MLA99507207428_112025-AB.webp"
     },
     {
         "id": 25,
@@ -197,7 +197,7 @@
         "descripcion": "Rollo de 48mm x 40m, alta adherencia.",
         "precio": 1490.0,
         "stock": 20,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_718008-MLA111699101150_062026-B.jpg"
     },
     {
         "id": 26,
@@ -205,7 +205,7 @@
         "descripcion": "Cinta de PVC resistente a la humedad.",
         "precio": 990.0,
         "stock": 12,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_642569-MLA102788634917_122025-B.jpg"
     },
     {
         "id": 27,
@@ -213,7 +213,7 @@
         "descripcion": "Candado de acero endurecido con llave de seguridad.",
         "precio": 6990.0,
         "stock": 5,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_752192-MLA82768016184_032025-AB.webp"
     },
     {
         "id": 28,
@@ -221,7 +221,7 @@
         "descripcion": "Ideal para casilleros y bicicletas.",
         "precio": 5490.0,
         "stock": 15,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_825593-MLA75404312267_032024-F.jpg"
     },
     {
         "id": 29,
@@ -229,7 +229,7 @@
         "descripcion": "Guantes reforzados para protección en obras.",
         "precio": 4990.0,
         "stock": 25,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_977804-MLA88313282239_072025-AB.webp"
     },
     {
         "id": 30,
@@ -237,7 +237,7 @@
         "descripcion": "Protección ocular con filtro anti-rayas.",
         "precio": 2490.0,
         "stock": 8,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_948434-MLA110511238962_052026-AB.webp"
     },
     {
         "id": 31,
@@ -245,7 +245,7 @@
         "descripcion": "Protección respiratoria para trabajos de corte y lijado.",
         "precio": 3990.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_730325-MLA92387352420_092025-AB.webp"
     },
     {
         "id": 32,
@@ -253,7 +253,7 @@
         "descripcion": "Casco tipo jockey con ajuste giratorio.",
         "precio": 8990.0,
         "stock": 3,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_757163-MLU76684698467_052024-AB.webp"
     },
     {
         "id": 33,
@@ -261,7 +261,7 @@
         "descripcion": "Brocas de widia para perforar hormigón y ladrillo.",
         "precio": 7490.0,
         "stock": 12,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_697945-MLA112755009401_062026-B.jpg"
     },
     {
         "id": 34,
@@ -269,7 +269,7 @@
         "descripcion": "Brocas HSS de alta velocidad, de 1mm a 10mm.",
         "precio": 9990.0,
         "stock": 10,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_876177-MPE101667352747_122025-AB.webp"
     },
     {
         "id": 35,
@@ -277,7 +277,7 @@
         "descripcion": "Disco abrasivo para amoladora, uso intensivo.",
         "precio": 1990.0,
         "stock": 8,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_940839-MLA100026559549_122025-AB.webp"
     },
     {
         "id": 36,
@@ -285,7 +285,7 @@
         "descripcion": "Ideal para eliminar rebabas y soldaduras.",
         "precio": 2290.0,
         "stock": 3,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_921012-MLA111549765249_052026-AB.webp"
     },
     {
         "id": 37,
@@ -293,7 +293,7 @@
         "descripcion": "Sierra de dientes templados para corte rápido.",
         "precio": 6990.0,
         "stock": 5,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_765644-MLA111680445744_062026-B.jpg"
     },
     {
         "id": 38,
@@ -301,7 +301,7 @@
         "descripcion": "Ideal para cortes de precisión en madera.",
         "precio": 8490.0,
         "stock": 10,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_720476-MLA112760582985_062026-B.jpg"
     },
     {
         "id": 39,
@@ -309,7 +309,7 @@
         "descripcion": "Llave de acero cromado con apertura regulable.",
         "precio": 7990.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_981526-MLA111649606411_052026-B.jpg"
     },
     {
         "id": 40,
@@ -317,6 +317,6 @@
         "descripcion": "Llave para tuberías con mordazas dentadas.",
         "precio": 12990.0,
         "stock": 0,
-        "imagen": ""
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_995421-MPE110397675123_042026-AB.webp"
     }
 ]

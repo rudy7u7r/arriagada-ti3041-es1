@@ -1,6 +1,12 @@
 [
     {
         "usuario": "admin",
-        "clave": "admin123"
+        "clave": "admin123",
+        "rol": "admin"
+    },
+    {
+        "usuario": "rudy",
+        "clave": "123",
+        "rol": "cliente"
     }
 ]

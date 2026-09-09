@@ -1,13 +1,13 @@
 {% extends 'catalogo/base.html' %}
 
-{% block title %}Iniciar Sesión - Administrador{% endblock %}
+{% block title %}Crear Cuenta{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-4">
         <div class="card shadow">
             <div class="card-header bg-dark text-white text-center">
-                <h4 class="m-0">Acceso</h4>
+                <h4 class="m-0">Crear Cuenta de Cliente</h4>
             </div>
             <div class="card-body">
                 {% if error %}
@@ -23,10 +23,14 @@
                         <label class="form-label">Contraseña</label>
                         <input type="password" name="clave" class="form-control" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                    <div class="mb-3">
+                        <label class="form-label">Repetir Contraseña</label>
+                        <input type="password" name="clave2" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Crear Cuenta</button>
                 </form>
                 <p class="text-center mt-3 mb-0">
-                    ¿No tienes cuenta? <a href="{% url 'registro_usuario' %}">Regístrate aquí</a>
+                    ¿Ya tienes cuenta? <a href="{% url 'login_admin' %}">Inicia sesión</a>
                 </p>
             </div>
         </div>
