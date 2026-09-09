@@ -1,4 +1,4 @@
-Uso de ia para este trabajo = Geminis Flash 3.6
+Uso de ia para este trabajo = Geminis Flash 3.6 y Claude Sonnet 5 nivel de exigencia MEDIO
 
 PARTE 1:
 
@@ -38,6 +38,31 @@ El error SyntaxError: source code string cannot contain null bytes ocurre porque
 implementacion: 
 me dio un comando que sobreescribe el archivo: Set-Content -Path catalogo/views.py -Value "" -Encoding utf8
 y reescribi el codigo anteior 
+
+
+Solicitud:
+¿Puedes generar los siguientes fronts para mi pagina? 
+
+
+Respuesta de la ia:
+Gemini me entregó los HTML correspondientes a cada flujo de trabajo que tenía 
+
+
+implementacion: 
+Cree los archivos.HTML correspondientes para la página y copie el código correspodiente 
+
+
+Solicitud:
+"Cómo conectar las vistas entre sí para navegar del catálogo al detalle, agregar productos y carrito"
+
+Respuesta de la ia:
+Se explicó la estructura de rutas en catálogo/urls.py mapeando cada vista con un nombre único (name='...'), y se entregó el uso del tag de plantilla {% url 'nombre_vista' %} para vincular los botones del HTML. 
+
+implementacion: 
+Creación del mapeo de URLs en urls.py y sustitución de enlaces estáticos en los archivos HTML por las etiquetas dinámicas de Django para permitir la navegación fluida entre páginas. 
+
+
+
 
 
 
